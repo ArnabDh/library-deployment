@@ -1,4 +1,8 @@
-const BASE_URL = 'https://library-deployment.onrender.com';
+const protocol = window.location.protocol;
+const hostname = window.location.hostname;
+const port = window.location.port || 4000; // Fallback to 4000 if port is not set
+const BASE_URL = `${protocol}//${hostname}:${port}`;
+
 let accessToken='';
 async function signup() {
     const username = document.getElementById('signup-username').value;
