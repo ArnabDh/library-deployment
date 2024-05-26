@@ -1,4 +1,4 @@
-const BASE_URL = window.BASE_URL;
+const BASE_URL = 'https://library-deployment.onrender.com';
 let accessToken='';
 async function signup() {
     const username = document.getElementById('signup-username').value;
