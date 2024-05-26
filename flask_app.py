@@ -10,8 +10,7 @@ app.config['JWT_SECRET_KEY'] = 'your_secret_key'
 CORS(app)
 jwt = JWTManager(app)
 
-client = MongoClient('mongodb+srv://library:LUb8tbAwkQQfs6xo@cluster0.udrbi5z.mongodb.net/?retryWrites=true&w'
-                     '=majority&appName=Cluster0')
+client = MongoClient("mongodb+srv://library:LUb8tbAwkQQfs6xo@cluster0.udrbi5z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = client['library_db']
 
 users_collection = db['users']
