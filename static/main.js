@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = process.env.PORT || 5000;
 let accessToken='';
 async function signup() {
     const username = document.getElementById('signup-username').value;
