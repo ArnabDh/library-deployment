@@ -1,4 +1,4 @@
-const BASE_URL = process.env.PORT || 8000;
+const BASE_URL = 'http://0.0.0.0:8000';
 let accessToken='';
 async function signup() {
     const username = document.getElementById('signup-username').value;
